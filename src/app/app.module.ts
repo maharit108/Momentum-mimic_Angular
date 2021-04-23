@@ -5,20 +5,26 @@ import { FormsModule } from '@angular/forms'
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { ToDosComponent } from './components/to-dos/to-dos.component';
-import { ToDoItemComponent } from './components/to-do-item/to-do-item.component';
-import { HeaderComponent } from './components/header/header.component';
-import { AddTodoComponent } from './components/add-todo/add-todo.component';
-import { LoginComponent } from './components/login/login.component';
+
+import { ToDosComponent } from '../app/components/todo/to-dos/to-dos.component';
+import { ToDoItemComponent } from '../app/components/todo/to-do-item/to-do-item.component';
+import { AddTodoComponent } from '../app/components/todo/add-todo/add-todo.component';
+
+import { WeatherComponent } from './components/landing/weather/weather.component';
+import { QuotesComponent } from './components/landing/quotes/quotes.component';
+import { MainLandComponent } from './components/landing/main-land/main-land.component';
+import { TimeComponent } from './components/landing/time/time.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ToDosComponent,
     ToDoItemComponent,
-    HeaderComponent,
     AddTodoComponent,
-    LoginComponent
+    WeatherComponent,
+    QuotesComponent,
+    MainLandComponent,
+    TimeComponent
   ],
   imports: [
     BrowserModule,
